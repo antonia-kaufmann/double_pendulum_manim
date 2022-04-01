@@ -32,4 +32,4 @@ manim double_pendulum_manim.py DoublePendulum
 ## Example
 ### Double Pendulum
 
-![Double pendulum](media/double-pendulum.gif)
+![Double pendulum](double-pendulum2.gif)
