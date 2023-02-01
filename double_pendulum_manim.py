@@ -32,15 +32,15 @@ class DoublePendulum(Scene):
         self.add(axes)
 
         Text1 = TexMobject(rf"""
-                \theta_1 &= 160^o \\
-                \omega_1 &=0^o/s
+                \alpha_1 &= 90^o \\
+                \dot{{\alpha}}_1 &=0^o/s
                 """).to_edge(UP + LEFT)
 
         self.add(Text1)
 
-        Text2 = TexMobject(r"""
-                \theta_2 &= 90^o\\
-                \omega_2 &=0^o/s
+        Text2 = TexMobject(rf"""
+                \alpha_2 &= 0^o\\
+                \dot{{\alpha}}_2 &=0^o/s
                 """).to_edge(UP + RIGHT)
 
         self.add(Text2)
@@ -60,9 +60,9 @@ class DoublePendulum(Scene):
         length, gravity = parameters_double_pendulum()
         dt = 0.025
         t_span = [0, 5]
-        initial_angle1 = 160.0
+        initial_angle1 = 90.0
         initial_angular_velocity1 = 0.0
-        initial_angle2 = 90.0
+        initial_angle2 = 0
         initial_angular_velocity2 = 0.0
 
         # initial state
